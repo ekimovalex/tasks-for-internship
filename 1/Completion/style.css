@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;    
+}
+
+h1 {
+    font-size: 26px;
+    margin-left: 20px;
+    margin-bottom: 20px;    
+}
+
+.comp {
+    margin-left: 20px;
+
+}

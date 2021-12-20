@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;    
+}
+
+#regForm {
+    width: 400px;
+    margin-left: 40px;
+  }
+  
+  input {
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #000000;
+  }
+
+  .button {
+    overflow: auto;
+    float: right;
+  }
+  
+  .tab {
+    display: none;
+  }
+
+  .end  {
+    float: right;
+    margin-top: 6px;
+    margin-left: 3px;
+  }

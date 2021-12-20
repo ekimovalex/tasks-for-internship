@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SPA</title>
+
+</head>
+
+<body>
+
+    <form id="regForm" action="#" method="POST" onsubmit="return validate('regForm','email');">
+
+        <div id="name" class="tab">Имя:
+            <p><input placeholder="Введите имя" oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab"> Фамилия:
+            <p><input placeholder="Введите фамилию" oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab"> Почта:
+            <p><input id="email" name="email" class="email" type="email" placeholder="Введите e-mail"
+                    oninput="this.className = ''"></p>
+            </p>
+            <button class="end" type="submit" id="end" value="Submit"></button>
+        </div>
+
+        <div class="button">
+            <div>
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Далее</button>
+            </div>
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

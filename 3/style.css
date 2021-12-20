@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    background-color: rgb(236, 236, 236);
+    
+}
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.header   {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+   
+}
+
+.header_arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.left,
+.right {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(252, 198, 98);
+    display: inline-flex;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left::before,
+.right::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+}
+
+.left::before {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    transform: rotate(-45deg);
+    top: 11px;
+    left: 12px;
+}
+
+.right::before {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    transform: rotate(135deg);
+    top: 11px;
+    left: 12px;
+}
+
+.left:hover,
+.right:hover {
+    background-color: rgb(255, 145, 0);
+}
+
+.num   {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.land {
+    margin-top: 10px;
+    display: flex;
+}
+
+.land_item_1 {
+    margin-right: 10px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.land_item_2 {
+    margin-left: 10px;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.land_photo {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.land_content {
+    position: absolute;
+    top: 320px;
+    cursor: pointer;
+    transition: all 0.9s;
+
+}
+
+.detals {
+    font-size: 14px;
+    color: yellow;
+    background: rgba(40,169,224,0.6);
+    padding: 3px 10px 3px 10px;
+}
+
+.land_content_hidden {
+    color: rgb(216, 216, 69);
+    max-width: 260px;
+    font-size: 18px;
+    position: absolute;
+    top: 70px;
+    background:rgba(0, 0, 0, 0.6);
+    padding: 15px 15px 166px 15px;
+    transition: all 0.9s; 
+    display: none;
+}
+
+.land_content:hover ~ .land_content_hidden {
+    display: block;
+}
+
+.land_content:hover {
+    display: none;
+}
+
+.land_text {
+    margin-top: 0px;
+    font-size: 16px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+
